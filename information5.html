@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Information Record</title>
+  <link rel="stylesheet" href="style_info.css">
+</head>
+<body>
+
+<form action="submit_final.php" method="POST">
+  <!-- Header Section -->
+  <div class="header">
+    <img src="logo.png" alt="Pasig Seal">
+    <img src="mlogo.png" alt="PLP Seal">
+    <div class="header-content">
+      <div class="school-name">PAMANTASAN NG LUNGSOD NG PASIG</div>
+      <div class="sub-info">
+        <strong>Guidance and Counseling Office</strong><br>
+        📍Alkalde Jose St. Kapasigan Pasig City, Philippines 1600
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header"> </div>
+  <div class="form-box">
+    <p>STUDENT INFORMATION RECORD (SIR)</p>
+  </div>
+
+  
+    <div class="section-header">
+      V. OTHERS
+    </div>
+
+    <div class="form-section">
+      <label>Do you use the Internet and other digital devices? <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="internet_use" value="Yes" required> Yes</label>
+        <label><input type="radio" name="internet_use" value="No"> No</label>
+        <label><input type="radio" name="internet_use" value="Other"> Others:
+          <input type="text" name="internet_use_other" placeholder="Please specify">
+        </label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <label>If yes, usually for what purpose? <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="internet_purpose" value="Social Media" required> Social Media</label>
+        <label><input type="radio" name="internet_purpose" value="Research"> Research</label>
+        <label><input type="radio" name="internet_purpose" value="Study/Subject related"> Study/Subject related</label>
+        <label><input type="radio" name="internet_purpose" value="Other"> Others:
+        <input type="text" name="internet_purpose_other" placeholder="Please specify">
+        </label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <label for="hours">How long do you use the Internet in a day? (number of hours)</label>
+      <input type="text" id="hours" name="hours" placeholder="Your answer">
+    </div>
+
+    <div class="form-section">
+      <label for="concern">What do you think are the possible concerns that may affect your scholastic achievement? <span class="required">*</span></label>
+      <input type="text" id="concern" name="concern" placeholder="Your answer" required>
+    </div>
+
+    <div class="form-section">
+      <label for="strengths">What are your strengths? <span class="required">*</span></label>
+      <input type="text" id="strengths" name="strengths" placeholder="Your answer" required>
+    </div>
+    <div class="form-section">
+      <label for="challenges">How do you handle and overcome life's challenges? <span class="required">*</span></label>
+      <input type="text" id="challenges" name="challenges" placeholder="Your answer" required>
+    </div>
+
+     <div class="button-box">
+        <button onclick="location.href='information4.html'">Back</button>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
+

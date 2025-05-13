@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Information Record</title>
+  <link rel="stylesheet" href="style_info.css">
+</head>
+<body>
+
+<form action="start_session.php" method="POST">
+    <input type="hidden" name="nextPage" value="information3.html">
+  <!-- Header Section -->
+  <div class="header">
+    <img src="logo.png" alt="Pasig Seal">
+    <img src="mlogo.png" alt="PLP Seal">
+    <div class="header-content">
+      <div class="school-name">PAMANTASAN NG LUNGSOD NG PASIG</div>
+      <div class="sub-info">
+        <strong>Guidance and Counseling Office</strong><br>
+        📍Alkalde Jose St. Kapasigan Pasig City, Philippines 1600
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header"> </div>
+  <div class="form-box">
+    <p>STUDENT INFORMATION RECORD (SIR)</p>
+  </div>
+
+  
+    <div class="section-header">
+      II. FAMILY BACKGROUND
+    </div>
+
+    <div class="form-info">
+      <label for="name">Father's Name: Surname, Given Name, Middle Name</label>
+      <input type="text" id="name" name="name" placeholder="Your answer">
+    </div>
+
+    <div class="form-section">
+      <label for="name">Mother's Name: Surname, Given Name, Middle Name</label>
+      <input type="text" id="name" name="name" placeholder="Your answer">
+    </div>
+
+    <div class="form-section">
+        <label for="Marital status">Marital Status of Parents <span class="required">*</span></label>
+        <select id="Marital status" name="Marital status" required>
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Married"> Married</option>
+            <option value="Living Together">Living Together</option>
+            <option value="Separated"> Separated</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+      <label>Parent/s Working Abroad</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Parent/s Working Abroad" value="Mother"> Mother</label>
+        <label><input type="radio" name="Parent/s Working Abroad" value="Father"> Father</label>
+        <label><input type="radio" name="Parent/s Working Abroad" value="Both"> Both</label>
+        <label><input type="radio" name="Parent/s Working Abroad" value="Not Applicable"> Not Applicable</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <label for="siblings">Number of siblings including self</label>
+      <input type="text" id="siblings" name="siblings" placeholder="Your answer">
+    </div>
+
+    <div class="form-section">
+      <label for="name">Guirdian's Name: Surname, Given Name, Middle Name</label>
+      <input type="text" id="name" name="name" placeholder="Your answer">
+    </div>
+
+    <div class="form-section">
+      <label for="name">Spouse's Name: Surname, Given Name, Middle Name (if married)</label>
+      <input type="text" id="name" name="name" placeholder="Your answer">
+    </div>
+
+    <div class="form-section">
+      <label for="children">Number of children (if applicable)</label>
+      <input type="text" id="children" name="children" placeholder="Your answer">
+    </div>
+
+    <div class="form-section">
+        <label for="income">Monthly Family Income</label>
+        <select id="income" name="income">
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Below Php 7,000"> Below Php 7,000</option>
+            <option value="Php 7,000 to Php 9,500">Php 7,000 to Php 9,500</option>
+            <option value="Php 9,500 to Php 12,000">Php 9,500 to Php 12,000</option>
+            <option value="Php 12,000 to Php 14,500">Php 12,000 to Php 14,500</option>
+            <option value="Php 14,500 to Php 17,000">Php 14,500 to Php 17,000</option>
+            <option value="Php 17,000 to Php 22,000">Php 17,000 to Php 22,000</option>
+            <option value="Above Php 22,000">Above Php 22,000</option>
+        </select>
+    </div>
+
+    <div class="button-box">
+        <button type="button" onclick="window.location.href='information.html'">Back</button>
+        <button type="submit">Next</button>
+    </div>
+</form>
+
+</body>
+</html>

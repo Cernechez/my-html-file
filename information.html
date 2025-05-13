@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Information Record</title>
+  <link rel="stylesheet" href="style_info.css">
+</head>
+<body>
+
+<form action="start_session.php" method="POST">
+  <!-- Add this hidden input to tell PHP what the next page is -->
+  <input type="hidden" name="nextPage" value="information2.html">
+  <!-- Header Section -->
+  <div class="header">
+    <img src="logo.png" alt="Pasig Seal">
+    <img src="mlogo.png" alt="PLP Seal">
+    <div class="header-content">
+      <div class="school-name">PAMANTASAN NG LUNGSOD NG PASIG</div>
+      <div class="sub-info">
+        <strong>Guidance and Counseling Office</strong><br>
+        📍Alkalde Jose St. Kapasigan Pasig City, Philippines 1600
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header"> </div>
+  <div class="form-box">
+    <p>STUDENT INFORMATION RECORD (SIR)</p>
+  </div>
+
+    <!-- Section Header -->
+    <div class="section-header">
+      I. PERSONAL INFORMATION
+    </div>
+
+    <!-- Name Field -->
+    <div class="form-info">
+      <label for="name">Name: Surname, Given Name, Middle Name <span class="required">*</span></label>
+      <input type="text" id="name" name="name" placeholder="Your answer" required>
+    </div>
+
+    <!-- Birthdate Field -->
+    <div class="form-section">
+      <label for="birthdate">Birthdate <span class="required">*</span></label>
+      <input type="date" id="birthdate" name="birthdate" required>
+    </div>
+
+    <!-- Place of Birth Field -->
+    <div class="form-section">
+      <label for="birthplace">Place of Birth <span class="required">*</span></label>
+      <input type="text" id="birthplace" name="birthplace" placeholder="Your answer" required>
+    </div>
+
+    <!-- Gender Field -->
+    <div class="form-section">
+      <label>Gender <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Female" required> Female</label>
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="LGBTQ+Male"> LGBTQ+ Male</label>
+        <label><input type="radio" name="gender" value="LGBTQ+Female"> LGBTQ+ Female</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <label for="cellphone">Active Cellphone Number <span class="required">*</span></label>
+      <input type="text" id="cellphone" name="cellphone" placeholder="Your answer" required>
+    </div>
+
+    <div class="form-section">
+      <label for="address">Assigned Email Address<span class="required">*</span></label>
+      <input type="text" id="address" name="address" placeholder="Your answer" required>
+    </div>
+
+    <div class="form-section">
+      <label for="city-address">City Address<span class="required">*</span></label>
+      <input type="text" id="city-address" name="city-address" placeholder="Your answer" required>
+    </div>
+
+    <div class="form-section">
+      <label for="provincial-address">Provincial Address</label>
+      <input type="text" id="provincial-address" name="provincial-address" placeholder="Your answer">
+    </div>
+
+    <div class="form-section">
+      <label>Whom do you live with? <span class="required">*</span></label>
+      <div class="radio-group" required>
+        <label><input type="radio" name="live with?" value="Parents"> Parents</label>
+        <label><input type="radio" name="live with?" value="Relatives"> Relatives</label>
+        <label><input type="radio" name="live with?" value="Siblings"> Siblings</label>
+        <label><input type="radio" name="live with?" value="Partner"> Partner</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+        <label for="support">Who is supporting your education? <span class="required">*</span></label>
+        <select id="support" name="support">
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Parents">Parents</option>
+            <option value="Relatives">Relatives</option>
+            <option value="Siblings">Siblings</option>
+            <option value="self-Supporting">Self-Supporting</option>
+            <option value="Private agency">Private agency</option>
+            <option value="Public agency">Public agency</option>
+            <option value="Parner">Parner</option>
+        </select>
+    </div>
+
+   <div class="form-section">
+    <label>Year <span class="required">*</span></label>
+    <div class="radio-group">
+        <label><input type="radio" name="Year" value="First" required> First</label>
+        <label><input type="radio" name="Year" value="Second"> Second</label>
+        <label><input type="radio" name="Year" value="Third"> Third</label>
+        <label><input type="radio" name="Year" value="Fourth"> Fourth</label>
+        <label>
+        <input type="radio" name="Year" value="Others" onclick="document.getElementById('otherYear').style.display='inline-block'"> Others
+        </label>
+        <input type="text" name="other_year" id="otherYear" placeholder="Please specify" style="display:none; margin-left:10px;">
+    </div>
+    </div>
+
+    <div class="form-section">
+        <label for="status">Academic Status <span class="required">*</span></label>
+        <select id="status" name="status">
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Regular">Regular</option>
+            <option value="Transferee">Transferee</option>
+            <option value="Continuing">Continuing</option>
+            <option value="Returnee">Returnee</option>
+            <option value="Irregular (returnee, shiftee)">Irregular (returnee, shiftee)</option>
+        </select>
+    </div>
+
+
+    <div class="button-box">
+        <button type="button" onclick="window.location.href='index.html'">Back</button>
+        <button type="submit">Next</button>
+    </div>
+
+</form>
+</body>
+</html>

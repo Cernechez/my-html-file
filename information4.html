@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Information Record</title>
+  <link rel="stylesheet" href="style_info.css">
+</head>
+<body>
+
+ <form action="start_session.php" method="POST">
+  <!-- Add this hidden input to tell PHP what the next page is -->
+  <input type="hidden" name="nextPage" value="information5.html">
+  <!-- Header Section -->
+  <div class="header">
+    <img src="logo.png" alt="Pasig Seal">
+    <img src="mlogo.png" alt="PLP Seal">
+    <div class="header-content">
+      <div class="school-name">PAMANTASAN NG LUNGSOD NG PASIG</div>
+      <div class="sub-info">
+        <strong>Guidance and Counseling Office</strong><br>
+        📍Alkalde Jose St. Kapasigan Pasig City, Philippines 1600
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header"> </div>
+  <div class="form-box">
+    <p>STUDENT INFORMATION RECORD (SIR)</p>
+  </div>
+
+  
+    <div class="section-header">
+      IV. MENTAL HEALTH RECORD
+    </div>
+
+    <div class="form-info">
+       <p>To check your current emotional state. Choose the answer hat best describes how you fell over the past two weeks.</p>
+    </div>
+
+    <div class="form-section">
+       <label for="mental">Feeling anvious and worried <span class="required">*</span></label>
+        <select id="mental" name="mental" required>
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Always"> Always</option>
+            <option value="Often">Often</option>
+            <option value="Sometimes"> Sometimes</option>
+            <option value="Rarely"> Rarely</option>
+            <option value="Never"> Never</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+       <label for="mental">Feeling hopeless <span class="required">*</span></label>
+        <select id="mental" name="mental" required>
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Always"> Always</option>
+            <option value="Often">Often</option>
+            <option value="Sometimes"> Sometimes</option>
+            <option value="Rarely"> Rarely</option>
+            <option value="Never"> Never</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+       <label for="mental">Experience diffuclty in sleeping <span class="required">*</span></label>
+        <select id="mental" name="mental" required>
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Always"> Always</option>
+            <option value="Often">Often</option>
+            <option value="Sometimes"> Sometimes</option>
+            <option value="Rarely"> Rarely</option>
+            <option value="Never"> Never</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+       <label for="mental">Have difficulty focusing or concentrating <span class="required">*</span></label>
+        <select id="mental" name="mental" required>
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Always"> Always</option>
+            <option value="Often">Often</option>
+            <option value="Sometimes"> Sometimes</option>
+            <option value="Rarely"> Rarely</option>
+            <option value="Never"> Never</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+       <label for="mental">Have thought of harming myself <span class="required">*</span></label>
+        <select id="mental" name="mental" required>
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Always"> Always</option>
+            <option value="Often">Often</option>
+            <option value="Sometimes"> Sometimes</option>
+            <option value="Rarely"> Rarely</option>
+            <option value="Never"> Never</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+       <label for="mental">Have you sought any mental health professional before? <span class="required">*</span></label>
+        <select id="mental" name="mental" required>
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Yes"> Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+       <label for="mental">Have you undergone any Psychological Assessment? <span class="required">*</span></label>
+        <select id="mental" name="mental" required>
+            <option value="" disabled selected> Please choose an option </option>
+            <option value="Yes"> Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+
+
+    <div class="form-section">
+      <label>Are you currently taking or have you taken any medications for mental health concerns? <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="medications" value="No"> No</label>
+        <label>
+        <input type="radio" name="medications" value="Yes" onclick="document.getElementById('other').style.display='inline-block'"> Yes
+        </label>
+        <input type="text" name="other_medications" id="other" placeholder="Please specify" style="display:none; margin-left:10px;">
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <label>Are you currently engaged in <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="Are you currently engaged in" value="Drinking alcoholic beverage"> Drinking alcoholic beverage</label>
+        <label><input type="radio" name="Are you currently engaged in" value="Smoking"> Smoking</label>
+        <label><input type="radio" name="Are you currently engaged in" value="Gambling"> Gambling</label>
+        <label><input type="radio" name="Are you currently engaged in" value="Having sexual intercourse"> Having sexual intercourse</label>
+        <label><input type="radio" name="Are you currently engaged in" value="None of the above"> None of the above</label>
+        <label>
+        <input type="radio" name="Are you currently engaged in" value="Use of prohibited drugs" onclick="document.getElementById('engaged').style.display='inline-block'"> Use of prohibited drugs
+        </label>
+        <input type="text" name="other_engaged" id="engaged" placeholder="Please specify" style="display:none; margin-left:10px;">
+      </div>
+    </div>
+
+    <div class="button-box">
+        <button type="button" onclick="window.location.href='information3.html'">Back</button>
+        <button type="submit">Next</button>
+    </div>
+</form>
+
+</body>
+</html>
